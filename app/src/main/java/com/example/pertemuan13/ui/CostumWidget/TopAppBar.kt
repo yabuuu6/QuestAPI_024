@@ -1,6 +1,6 @@
 package com.example.pertemuan13.ui.CostumWidget
 
-import android.icu.text.CaseMap.Title
+
 import androidx.compose.foundation.clickable
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -16,27 +16,27 @@ import androidx.compose.ui.Modifier
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CostumeTopAppBar(
+fun TopAppBar(
     title: String,
-    canNavigateBack:Boolean,
-    modifier: Modifier=Modifier,
-    scrollBehavior: TopAppBarScrollBehavior?=null,
-    navigateUp:()-> Unit = {},
-    onRefresh:()-> Unit = {},
+    canNavigateBack: Boolean,
+    modifier: Modifier = Modifier,
+    scrollBehavior: TopAppBarScrollBehavior? = null,
+    navigateUp: () -> Unit = {},
+    onRefresh: () -> Unit = {},
 
-){
+    ){
     CenterAlignedTopAppBar(
-        title={ Text(title)},
+        title = { Text(title) },
         actions = {
-            Icon(imageVector = Icons.Default.Refresh, contentDescription ="",modifier=Modifier.clickable {
+            Icon(imageVector = Icons.Default.Refresh, contentDescription = "", modifier = modifier.clickable {
                 onRefresh()
             })
         },
-        modifier = Modifier,
+        modifier = modifier,
         scrollBehavior = scrollBehavior, navigationIcon = {
-            if(canNavigateBack){
+            if (canNavigateBack) {
                 IconButton(onClick = navigateUp) {
-                    Icon(imageVector = Icons.Filled.ArrowBack,contentDescription = null)
+                    Icon(imageVector = Icons.Default.ArrowBack, contentDescription =  null)
                 }
             }
         }
