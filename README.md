@@ -11,7 +11,7 @@ Halaman Detail
 ![image](https://github.com/user-attachments/assets/a79d0443-c3a8-4fca-b8ab-a43a52ebb906)
 
 Update
-![image](https://github.com/user-attachments/assets/9e3a54fd-e264-457b-aaf4-d52b0685a187)
+![image](https://github.com/user-attachments/assets/250a4cf1-5eb1-4c23-ab92-a395da186a4c)
 
 Hasil Update
 ![image](https://github.com/user-attachments/assets/efbf71b3-159b-4cc7-929f-c5cb420609f5)
